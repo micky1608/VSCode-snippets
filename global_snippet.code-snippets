@@ -64,5 +64,22 @@
 				"\trm $(OBJECTS) $(EXEC)"
 			],
 			"description": "Makefile"
-		}
+		},
+
+		"header": {
+			"prefix": "header",
+			"body": [
+			  "/*",
+			  "* Created on $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			  "*/",
+			  "",
+			  "#ifndef $HEADER_VARIABLE",
+			  "#define $HEADER_VARIABLE",
+			  "",
+			  "$0",
+			  "",
+			  "#endif"
+			],
+			"description": "header"
+		  }
 }
