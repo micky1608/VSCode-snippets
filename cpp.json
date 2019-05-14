@@ -20,6 +20,7 @@
 		  "#include <iostream>",
 		  "#include <vector>",
 		  "#include <set>",
+		  "#include <algorithm>",
 		  "",
 		  "typedef long long ll;",
 		  "",
@@ -71,5 +72,19 @@
 				"cout << $1 << endl;\n$0"
 			],
 			"description": "cout"
+		},
+
+		"cout var" : {
+			"prefix": "p var",
+			"body": [
+				"cout << \"$var : \" <<  $var << endl;\n$0"
+			],
+			"description": "cout var"
+		},
+
+		"cout space" : {
+			"prefix" : "ss",
+			"body": " << \" \" << ",
+			"description": "cout space"
 		}
 }
