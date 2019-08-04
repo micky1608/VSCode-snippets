@@ -47,7 +47,7 @@
 			"body": [
 				"cout << \"$vec : \";",
 				"for(int $i=0 ; $i < $vec.size() ; ++$i) {",
-				"    cout << $vec[i] << \" \";",
+				"    cout << $vec[$i] << \" \";",
 				"}",
 				"cout << endl;"
 			],
@@ -59,7 +59,7 @@
 			"body": [
 				"cout << \"$array : \";",
 				"for(int $i=0 ; $i < $size ; ++$i) {",
-				"    cout << $array[i] << \" \";",
+				"    cout << $array[$i] << \" \";",
 				"}",
 				"cout << endl;"
 			],
